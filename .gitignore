@@ -3,5 +3,8 @@
 .RData
 .Ruserdata
 .DS_Store
+.html
 
 HDMAX2_Simulation_Scripts.Rproj
+
+./Overview/*.html

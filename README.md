@@ -10,7 +10,7 @@ The **Simulation** folder contains three R scripts
 
 - launch_simulations_Figure_3.R: Simulation study that compares hdmax2 to recent approaches for HDMA in step 2 of the mediation analysis. The script reproduces Figure 3.
 
-
+The **Overview** folder contains a short Rmarkdown tutorial on how to use the R package hdmax2
 
 
 
