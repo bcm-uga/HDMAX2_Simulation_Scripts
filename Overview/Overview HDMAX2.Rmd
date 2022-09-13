@@ -1,7 +1,7 @@
 ---
 title: "Overview of R Package hdmax2"
-author: "Basile Jumentier, Claire-Cécile Barrot, Olivier Francois"
-date: "September 8, 2022"
+author: "Basile Jumentier, Claire-Cécile Barrot, Olivier Francois, Johanna Lepeule"
+date: "September 13, 2022"
 output:
   prettydoc::html_pretty:
     self_contained: true
@@ -24,6 +24,8 @@ knitr::opts_chunk$set(
 
 **Summary:**
 
+This document presents a short overview and the main functions of the R package `hdmax2`.
+
 ***
 
 ## Introduction 
@@ -42,7 +44,7 @@ Y=Xc+Mb^T +U_2V_2^T +E_2
 $$
 where is $c$ the direct effect of exposure on outcome, $b$ the effect sizes of DNAm levels on outcome, $U_2$ the latent factors from a latent factor regression model, $V_2$ the corresponding loadings, and$E_2$ the a matrix of errors (EWAS 2).
 
-- Step 2. **Identifying potential CpG mediators and aggregated mediator regions**. This step combines the significance values $P_x$ and $P_y$ obtained in EWAS 1 and 2 of step 1 to compute a single  $P$-value for each CpG marker.
+- Step 2. **Identifying potential CpG mediators and aggregated mediator regions**. This step combines the significance values $P_x$ and $P_y$ obtained in EWAS 1 and 2 of step 1 to compute a single  $P$-value for each CpG marker with the max squared function
 
 $$
 P = \max(P_x, P_y)^2
